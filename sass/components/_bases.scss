@@ -1,0 +1,47 @@
+/* колір головного тексту #757575 */
+/* другорялний колір тексту #212121 */
+/* колір логотипу #000000 */
+/* колір фона ховера #2196F3 */
+/* колір тексту ховера #FFFFFF */
+/* колір банера.футера #2F303A */
+/* другорялний колір сторінки #F5F5F5 */
+/* колір адреса футера rgba(255, 255, 255, 0.6); */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing:border-box;
+}
+
+ body{
+  background-color: var(--primery-white-color);
+  color: var(--primery-tetx-color);
+  font-family: 'Roboto' , sans-serif;
+  letter-spacing: 0.03em;
+ }
+h1,h2,h3,p, li{
+  margin:0;
+}
+a{
+  text-decoration: none;
+}
+button{
+  border: 0;
+  cursor: pointer;
+ }
+button,
+a{
+  font-family: inherit;
+  color: inherit;
+  outline: none;
+}
+address{
+  padding-top: 20px;
+}

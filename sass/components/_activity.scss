@@ -1,0 +1,55 @@
+.activity{
+  display: none;
+
+  @include desktop{
+    display: block;
+  padding-bottom: 94px;
+  }
+}
+.activity-title{
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--title-text-color);
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.activity-list{
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  .activity-galery{
+    padding-right: 30px;
+
+    &:last-child{
+      padding-right: 0;
+      margin-right: 0;
+    }
+
+    .activity-galery-wrapp{
+      position: relative;
+
+      .activity-text{
+        position: absolute;
+        background: rgba(47, 48, 58, 0.8);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.1;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        width: 370;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        width: 100%;
+        z-index: 2;
+        bottom: 5px;
+      }
+    }
+  }
+}
+
+

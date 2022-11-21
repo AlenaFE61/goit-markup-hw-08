@@ -1,0 +1,86 @@
+.teams{
+  background-color: #F5F4FA;
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  @include desktop{
+  padding-bottom: 94px;
+  padding-top: 94px;
+  }
+}
+.teams-title{
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--title-text-color);
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 30px;
+
+  @include desktop{
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+.teams-galery{
+  background-color: var(--primery-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
+
+  @include tablet{
+    margin-right: 30px;
+    &:nth-child(2){
+      margin-right: 0;
+    }
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+    @include desktop{
+      &:nth-child(2){
+        margin-right: 30px;
+    }
+  }
+
+  .tims-photo{
+    width: 450px;
+    height: 622px;
+     @include tablet{
+      width: 354px;
+      height: 374px;
+     }
+     @include desktop{
+      width: 270px;
+      height: 260px;
+     }
+    
+  }
+  .person{
+    padding-top:30px;
+    padding-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    @include desktop{
+      padding-bottom: 30px;
+    }
+
+    .name{
+      margin-bottom: 10px;
+      color:var(--title-text-color);
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.18;
+    }
+
+    .role{
+      margin-bottom: 16px;
+    }
+  }
+}
+
+
+
+
+
