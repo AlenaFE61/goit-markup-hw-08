@@ -6,12 +6,20 @@
   font-family: 'Roboto' , sans-serif;
 }
 .footer-block{
+
+  @include tablet{
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
+
+  @include desktop{
+    flex-wrap: nowrap;
+  }
+  // justify-content: space-between;
+  }
 }
 .footer-wrapp{
-  display: block;
-  margin: 0 auto;
+  // margin: 0 auto;
   text-align: center;
 
 
@@ -29,11 +37,14 @@
   color: var(--primery-white-color);
 }
 .footer-contacts{
+
   @include tablet{
     margin-right: 160px;
+    padding-left: 80px;
   }
   @include desktop{
     margin-right: 70px;
+    padding-left: 0;
   }
 
 }
@@ -43,12 +54,14 @@
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 60px;
+  
   @include tablet{
     margin-bottom: 0;
   
   }
   .list-footer-item{
     margin-bottom: 9px;
+    font-style: normal;
 
     &:last-child{
       margin-bottom: 0;
@@ -83,10 +96,13 @@
 }
 
 .join{
-  // width: 206px;
   height: 80px;
   padding-top: 12px;
   text-align: center;
+  @include desktop{
+    text-align: start;
+  }
+
   
 
   // margin-left: 56px;
@@ -147,6 +163,9 @@ margin-bottom: 20px;
 .footer-form{
   display: block;
   margin: 0 auto;
+  @include desktop{
+    text-align: left;
+  }
 
   .footer-label{
     box-sizing: border-box;
