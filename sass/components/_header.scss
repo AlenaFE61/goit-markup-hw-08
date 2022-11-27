@@ -112,11 +112,14 @@
  .mob-container{
   padding-left: 25px;
   padding-right: 20px;
-  max-width: 480px;
+  max-width: 320px;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
   overflow: auto;
+  @include mobile{
+    max-width: 480px;
+  }
  }
  .menu-open{
   background-color:transparent;
@@ -139,8 +142,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
   }
-  
 }
 .menu-close{
   background-color:transparent;
@@ -188,8 +191,12 @@ color: #757575;
   letter-spacing: 0.02em;
   color: #2196F3;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-  padding-left:10px;
-  padding-right: 10px;
+  padding-left:5px;
+  padding-right: 5px;
+  @include mobile{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 .mob-soc-list_item:last-child{
   border-right:none;
